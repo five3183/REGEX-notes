@@ -13,7 +13,7 @@ REGEX functions
       replace() - return new string with some or all matches of a pattern
 
 REGEX flags
-   FLAGS - they go after the end backslash and apply to everything inside the backslash
+   FLAGS - these go after the end backslash and apply to everything inside the backslash
    
          i - case insensitive
          g - global search. This will search the entire string for a match
@@ -32,7 +32,7 @@ Metacharacter Symbols
 
 Brackets [] - Character sets
 
-   brackets account for 1 character.  It can be specific or a range.
+Brackets account for 1 character.  It can be specific or a range.
       
       Example: /gr[ae]y/      will only matches gray or grey
                /[a-z]rey/     [Any lower case letter] + rey
@@ -42,7 +42,7 @@ Brackets [] - Character sets
 
 Braces {} - Quantifiers
 
-   The braces follow the trageted character.  With the amount of occurances or range of occurances inside the brace
+The braces follow the trageted character.  With the amount of occurances or range of occurances inside the brace
    
       Example: /Hel{2}o/      Will match Hello
                /Hel{2,4}o/i   {A range of occurances} Matches hello helllo and hellllo
@@ -50,7 +50,7 @@ Braces {} - Quantifiers
 
 Parentheses () - Grouping
 
-      Used to specify order or operations in REGEX
+Used to specify order or operations in REGEX
    
       Example:  /^([0-9]x){3}$/     (Inside looked at first then outside is applied)  Matches 3x3x3x only
 
