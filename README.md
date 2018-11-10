@@ -17,10 +17,13 @@ REGEX functions
 
 REGEX flags
    FLAGS - they go after the end backslash and apply to everything inside the backslash
+   
          i - case insensitive
          g - global search. This will search the entire string for a match
 
-Metacharacter Symbols 
+
+Metacharacter Symbols
+
    ^ - First letter must match what follows the carrot
    $ - Last letter must match what is before the money sign
    . - Single wild card: Matches one and only one characeter in its position
@@ -31,6 +34,7 @@ Metacharacter Symbols
    + - looks at all characters
 
 Brackets [] - Character sets
+
    brackets account for 1 character.  It can be specific or a range.
       Example: /gr[ae]y/      will only matches gray or grey
                /[a-z]rey/     [Any lower case letter] + rey
@@ -39,16 +43,19 @@ Brackets [] - Character sets
 
 
 Braces {} - Quantifiers
+
    The braces follow the trageted character.  With the amount of occurances or range of occurances inside the brace
       Example: /Hel{2}o/      Will match Hello
                /Hel{2,4}o/i   {A range of occurances} Matches hello helllo and hellllo
                /Hel{2,}o/i    {occurance,} The targeted letter must happen at least as many times.
 
 Parentheses () - Grouping
+
    Used to specify order or operations in REGEX
       Example:  /^([0-9]x){3}$/     (Inside looked at first then outside is applied)  Matches 3x3x3x only
 
 Shorthand Character Classes
+
    \w -  Checkes string for a number, letter or underscore
    \W -  Checkes for what is not included in \w !@#$%^&*
    \d -  Checks for a digit
