@@ -7,14 +7,11 @@ REGEX functions
    exec() - return a result in an array or null
       return the expression, the index that it starts at, and the string
       if it does not exist, it returns null
-   
-   test() - returns true of false if there is a match
-
-   match() - return restult array or null
-
-   search() - return index of the first match, if not found returns -1
-
-   replace() - return new string with some or all matches of a pattern
+      
+         test() - returns true of false if there is a match
+         match() - return restult array or null
+         search() - return index of the first match, if not found returns -1
+         replace() - return new string with some or all matches of a pattern
 
 REGEX flags
    FLAGS - they go after the end backslash and apply to everything inside the backslash
@@ -25,18 +22,26 @@ REGEX flags
 
 Metacharacter Symbols
 
-   ^ - First letter must match what follows the carrot
-   $ - Last letter must match what is before the money sign
-   . - Single wild card: Matches one and only one characeter in its position
-   * - Multi widl card: Matches any character(s) infinite amout of times
-   ? - Optional character. Lists an option character  
-         Example: /gre?a?y/ will match gry, gray and grey will match
-   \ - Escape character.
-   + - looks at all characters
+      ^ - First letter must match what follows the carrot
+
+      $ - Last letter must match what is before the money sign
+
+      . - Single wild card: Matches one and only one characeter in its position
+
+      * - Multi widl card: Matches any character(s) infinite amout of times
+
+      ? - Optional character. Lists an option character
+
+            Example: /gre?a?y/ will match gry, gray and grey will match
+
+      \ - Escape character
+
+      + - looks at all characters
 
 Brackets [] - Character sets
 
    brackets account for 1 character.  It can be specific or a range.
+      
       Example: /gr[ae]y/      will only matches gray or grey
                /[a-z]rey/     [Any lower case letter] + rey
                /[A-z a-z]rey/ [Any letter any case A-Z] + rey
