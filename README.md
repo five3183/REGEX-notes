@@ -7,11 +7,10 @@ REGEX functions
       exec() - return a result in an array or null
       return the expression, the index that it starts at, and the string
       if it does not exist, it returns null
-      
-         test() - returns true of false if there is a match
-         match() - return restult array or null
-         search() - return index of the first match, if not found returns -1
-         replace() - return new string with some or all matches of a pattern
+      test() - returns true of false if there is a match
+      match() - return restult array or null
+      search() - return index of the first match, if not found returns -1
+      replace() - return new string with some or all matches of a pattern
 
 REGEX flags
    FLAGS - they go after the end backslash and apply to everything inside the backslash
@@ -25,7 +24,7 @@ Metacharacter Symbols
       ^ - First letter must match what follows the carrot
       $ - Last letter must match what is before the money sign
       . - Single wild card: Matches one and only one characeter in its position
-      * - Multi widl card: Matches any character(s) infinite amout of times
+      * - Multi wild card: Matches any character(s) infinite amout of times
       ? - Optional character. Lists an option character
             Example: /gre?a?y/ will match gry, gray and grey will match
       \ - Escape character
@@ -51,7 +50,7 @@ Braces {} - Quantifiers
 
 Parentheses () - Grouping
 
-   Used to specify order or operations in REGEX
+      Used to specify order or operations in REGEX
    
       Example:  /^([0-9]x){3}$/     (Inside looked at first then outside is applied)  Matches 3x3x3x only
 
