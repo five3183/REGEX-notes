@@ -7,6 +7,7 @@ REGEX functions
    exec() - return a result in an array or null
       return the expression, the index that it starts at, and the string
       if it does not exist, it returns null
+   
    test() - returns true of false if there is a match
 
    match() - return restult array or null
