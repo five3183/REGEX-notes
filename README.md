@@ -3,6 +3,7 @@ Notes on REGEX
 Regular Expressions : used to describe a pattern of characters.
 
 REGEX functions
+
    exec() - return a result in an array or null
       return the expression, the index that it starts at, and the string
       if it does not exist, it returns null
